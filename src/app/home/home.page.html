@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      EMPLOYEE DATA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <!-- EMPLOYEE -->
+
+
+  <ion-card *ngFor="let employee of employees" color="success">
+
+    <ion-card-header>
+      <ion-card-title>{{employee.name}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <h4>Username: {{employee.username}}</h4>
+      <h4> Email: {{employee.email}}</h4>
+        <h4> Phone: {{employee.phone}}</h4>
+          <h4> Website: {{employee.website}}</h4>
+        </ion-card-content>
+
+  
+  </ion-card>
+
+</ion-content>
